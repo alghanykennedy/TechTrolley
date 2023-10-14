@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/colors.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/image_strings.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/sizes.dart';
+import 'package:techtrolley/utils/constants/colors.dart';
+import 'package:techtrolley/utils/constants/image_strings.dart';
+import 'package:techtrolley/utils/constants/sizes.dart';
 
 class TSocialButtons extends StatelessWidget {
   const TSocialButtons({

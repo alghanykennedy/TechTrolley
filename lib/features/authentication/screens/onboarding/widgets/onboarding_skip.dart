@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_apps/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/sizes.dart';
-import 'package:flutter_ecommerce_apps/utils/device/device_utility.dart';
+import 'package:techtrolley/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:techtrolley/utils/constants/sizes.dart';
+import 'package:techtrolley/utils/device/device_utility.dart';
 
 class OnBoardingSkip extends StatelessWidget {
   const OnBoardingSkip({

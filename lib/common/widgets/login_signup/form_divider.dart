@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/colors.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/texts.dart';
+import 'package:techtrolley/utils/constants/colors.dart';
+import 'package:techtrolley/utils/constants/text_strings.dart';
 import 'package:get/get.dart';
 
 class TLoginDivider extends StatelessWidget {

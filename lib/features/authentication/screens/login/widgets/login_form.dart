@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/sizes.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/texts.dart';
+import 'package:techtrolley/utils/constants/sizes.dart';
+import 'package:techtrolley/utils/constants/text_strings.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TLoginForm extends StatelessWidget {

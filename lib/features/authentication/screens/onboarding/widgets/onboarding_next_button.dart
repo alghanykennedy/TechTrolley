@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_apps/features/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/colors.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/sizes.dart';
-import 'package:flutter_ecommerce_apps/utils/device/device_utility.dart';
-import 'package:flutter_ecommerce_apps/utils/helpers/helper_function.dart';
+import 'package:techtrolley/features/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:techtrolley/utils/constants/colors.dart';
+import 'package:techtrolley/utils/constants/sizes.dart';
+import 'package:techtrolley/utils/device/device_utility.dart';
+import 'package:techtrolley/utils/helpers/helper_functions.dart';
 import 'package:iconsax/iconsax.dart';
 
 class OnBoardingNextButton extends StatelessWidget {

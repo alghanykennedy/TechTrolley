@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ecommerce_apps/common/styles/spacing_styles.dart';
-import 'package:flutter_ecommerce_apps/common/widgets/login_signup/form_divider.dart';
-import 'package:flutter_ecommerce_apps/common/widgets/login_signup/social_buttons.dart';
-import 'package:flutter_ecommerce_apps/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:flutter_ecommerce_apps/features/authentication/screens/login/widgets/login_header.dart';
-import 'package:flutter_ecommerce_apps/utils/constants/sizes.dart';
-import 'package:flutter_ecommerce_apps/utils/helpers/helper_function.dart';
+import 'package:techtrolley/common/styles/spacing_styles.dart';
+import 'package:techtrolley/common/widgets/login_signup/form_divider.dart';
+import 'package:techtrolley/common/widgets/login_signup/social_buttons.dart';
+import 'package:techtrolley/features/authentication/screens/login/widgets/login_form.dart';
+import 'package:techtrolley/features/authentication/screens/login/widgets/login_header.dart';
+import 'package:techtrolley/utils/constants/sizes.dart';
+import 'package:techtrolley/utils/helpers/helper_functions.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
