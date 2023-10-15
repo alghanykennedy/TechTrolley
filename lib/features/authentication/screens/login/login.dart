@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:techtrolley/common/styles/spacing_styles.dart';
 import 'package:techtrolley/common/widgets/login_signup/form_divider.dart';
 import 'package:techtrolley/common/widgets/login_signup/social_buttons.dart';
 import 'package:techtrolley/features/authentication/screens/login/widgets/login_form.dart';
 import 'package:techtrolley/features/authentication/screens/login/widgets/login_header.dart';
 import 'package:techtrolley/utils/constants/sizes.dart';
+import 'package:techtrolley/utils/constants/text_strings.dart';
 import 'package:techtrolley/utils/helpers/helper_functions.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -27,7 +29,7 @@ class LoginScreen extends StatelessWidget {
               const TLoginForm(),
 
               /// Divider
-              TLoginDivider(dark: dark),
+              TFormDivider(dividerText: TTexts.orSignUpWith.capitalize!),
               const SizedBox(
                 height: TSizes.spaceBtwSections,
               ),

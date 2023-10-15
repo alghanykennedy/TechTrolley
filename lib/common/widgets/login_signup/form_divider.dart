@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:techtrolley/utils/constants/colors.dart';
-import 'package:techtrolley/utils/constants/text_strings.dart';
-import 'package:get/get.dart';
+import 'package:techtrolley/utils/helpers/helper_functions.dart';
 
-class TLoginDivider extends StatelessWidget {
-  const TLoginDivider({
+class TFormDivider extends StatelessWidget {
+  const TFormDivider({
     super.key,
-    required this.dark,
+    required this.dividerText,
   });
 
-  final bool dark;
+  final String dividerText;
 
   @override
   Widget build(BuildContext context) {
+    final dark = THelperFunctions.isDarkMode(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -25,7 +25,7 @@ class TLoginDivider extends StatelessWidget {
           ),
         ),
         Text(
-          TTexts.orSignInWith.capitalize!,
+          dividerText,
           style: Theme.of(context).textTheme.labelMedium,
         ),
         Flexible(
