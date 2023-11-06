@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:techtrolley/common/widgets/custom_shapes/container/primary_header_container.dart';
 import 'package:techtrolley/common/widgets/custom_shapes/container/search_container.dart';
+import 'package:techtrolley/common/widgets/layouts/grid_layout.dart';
+import 'package:techtrolley/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:techtrolley/common/widgets/texts/section_heading.dart';
 import 'package:techtrolley/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:techtrolley/features/shop/screens/home/widgets/home_categories.dart';
@@ -13,11 +15,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   /// -- Appbar --
@@ -60,14 +62,28 @@ class HomeScreen extends StatelessWidget {
 
             /// Body
             Padding(
-              padding: EdgeInsets.all(
+              padding: const EdgeInsets.all(
                 TSizes.defaultSpace,
               ),
-              child: TPromoSlider(
-                banner: [
-                  TImages.promoBanner1,
-                  TImages.promoBanner2,
-                  TImages.promoBanner3
+              child: Column(
+                children: [
+                  /// -- Promo Slider
+                  const TPromoSlider(
+                    banner: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3
+                    ],
+                  ),
+                  const SizedBox(
+                    height: TSizes.spaceBtwSections,
+                  ),
+
+                  /// -- Popular Products
+                  TGridLayout(
+                    itemCount: 4,
+                    itemBuilder: (_, index) => const TProductCardVertical(),
+                  )
                 ],
               ),
             ),
