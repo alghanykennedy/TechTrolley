@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:techtrolley/utils/constants/colors.dart';
+import 'package:techtrolley/utils/helpers/helper_functions.dart';
 
-class TCartCounterCart extends StatelessWidget {
-  const TCartCounterCart({
+class TCartCounterIcon extends StatelessWidget {
+  const TCartCounterIcon({
     super.key,
     required this.onPressed,
-    required this.iconColor,
+    this.iconColor,
   });
 
-  final Color iconColor;
+  final Color? iconColor;
   final VoidCallback onPressed;
 
   @override
@@ -28,14 +29,18 @@ class TCartCounterCart extends StatelessWidget {
           width: 18,
           height: 18,
           decoration: BoxDecoration(
-            color: TColors.black,
+            color: THelperFunctions.isDarkMode(context)
+                ? TColors.white
+                : TColors.black,
             borderRadius: BorderRadius.circular(100),
           ),
           child: Center(
             child: Text(
               '2',
               style: Theme.of(context).textTheme.labelLarge!.apply(
-                    color: TColors.white,
+                    color: THelperFunctions.isDarkMode(context)
+                        ? TColors.black
+                        : TColors.white,
                     fontSizeFactor: 0.8,
                   ),
             ),

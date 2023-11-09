@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:techtrolley/utils/constants/colors.dart';
 import 'package:techtrolley/utils/constants/sizes.dart';
 
 class TCircularIcon extends StatelessWidget {
@@ -27,13 +26,7 @@ class TCircularIcon extends StatelessWidget {
       width: width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(100),
-        color: backgroundColor != null
-            ? TColors.black.withOpacity(
-                0.9,
-              )
-            : TColors.white.withOpacity(
-                0.9,
-              ),
+        color: backgroundColor,
       ),
       child: IconButton(
         onPressed: () {},

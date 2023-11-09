@@ -79,9 +79,15 @@ class HomeScreen extends StatelessWidget {
                     height: TSizes.spaceBtwSections,
                   ),
 
+                  /// -- Heading
+                  TSectionHeading(
+                    title: 'Popular Products',
+                    onPressed: () {},
+                  ),
+
                   /// -- Popular Products
                   TGridLayout(
-                    itemCount: 4,
+                    itemCount: 2,
                     itemBuilder: (_, index) => const TProductCardVertical(),
                   )
                 ],

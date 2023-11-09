@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:techtrolley/features/shop/screens/home/home.dart';
+import 'package:techtrolley/features/shop/screens/strore/store.dart';
 import 'package:techtrolley/utils/constants/colors.dart';
 import 'package:techtrolley/utils/helpers/helper_functions.dart';
 
@@ -65,9 +66,7 @@ class NavigatorController extends GetxController {
 
   final screen = [
     const HomeScreen(),
-    Container(
-      color: Colors.purple,
-    ),
+    const StoreScreen(),
     Container(
       color: Colors.orange,
     ),
