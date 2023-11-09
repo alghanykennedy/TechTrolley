@@ -72,6 +72,7 @@ class StoreScreen extends StatelessWidget {
                       height: TSizes.spaceBtwItems / 1.5,
                     ),
 
+                    /// -- Brands GRID
                     TGridLayout(
                         itemCount: 4,
                         mainAxisExtent: 80,
