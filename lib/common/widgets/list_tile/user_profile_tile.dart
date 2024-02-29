@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:techtrolley/common/widgets/images/t_circular_images.dart';
+import 'package:techtrolley/features/personalization/screens/profile/profile.dart';
 import 'package:techtrolley/utils/constants/colors.dart';
 import 'package:techtrolley/utils/constants/image_strings.dart';
 
@@ -31,7 +33,9 @@ class TUserProfileTile extends StatelessWidget {
             Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),
       ),
       trailing: IconButton(
-        onPressed: () {},
+        onPressed: () {
+          Get.to(const ProfileScreen());
+        },
         icon: const Icon(
           Iconsax.edit,
           color: TColors.white,
