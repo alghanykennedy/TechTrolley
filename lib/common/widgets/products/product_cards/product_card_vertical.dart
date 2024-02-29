@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:techtrolley/common/styles/shadows.dart';
 import 'package:techtrolley/common/widgets/custom_shapes/container/rounded_container.dart';
@@ -7,6 +8,7 @@ import 'package:techtrolley/common/widgets/images/t_rounded_image.dart';
 import 'package:techtrolley/common/widgets/texts/product_price_text.dart';
 import 'package:techtrolley/common/widgets/texts/product_title_text.dart';
 import 'package:techtrolley/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
+import 'package:techtrolley/features/shop/screens/product_details/product_detail.dart';
 import 'package:techtrolley/utils/constants/colors.dart';
 import 'package:techtrolley/utils/constants/image_strings.dart';
 import 'package:techtrolley/utils/constants/sizes.dart';
@@ -20,7 +22,7 @@ class TProductCardVertical extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
