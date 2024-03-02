@@ -52,7 +52,7 @@ class ProfileScreen extends StatelessWidget {
               ),
               const TSectionHeading(
                 title: 'Profile Information',
-                shwowActionButton: false,
+                showActionButton: false,
               ),
               const SizedBox(
                 height: TSizes.spaceBtwItems,
@@ -61,7 +61,7 @@ class ProfileScreen extends StatelessWidget {
               /// Heading Profile Info
               const TSectionHeading(
                 title: 'Profile Information',
-                shwowActionButton: false,
+                showActionButton: false,
               ),
               const SizedBox(
                 height: TSizes.spaceBtwItems,
@@ -89,7 +89,7 @@ class ProfileScreen extends StatelessWidget {
               /// Heading Personal Info
               const TSectionHeading(
                 title: 'Personal Information',
-                shwowActionButton: false,
+                showActionButton: false,
               ),
               const SizedBox(
                 height: TSizes.spaceBtwItems,

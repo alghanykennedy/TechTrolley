@@ -50,7 +50,7 @@ class SettingScreen extends StatelessWidget {
                   /// -- Account Settings
                   const TSectionHeading(
                     title: 'Account Settings',
-                    shwowActionButton: false,
+                    showActionButton: false,
                   ),
                   const SizedBox(
                     height: TSizes.spaceBtwItems,
@@ -105,7 +105,7 @@ class SettingScreen extends StatelessWidget {
                   ),
                   const TSectionHeading(
                     title: 'App Settings',
-                    shwowActionButton: false,
+                    showActionButton: false,
                   ),
                   const SizedBox(
                     height: TSizes.spaceBtwItems,

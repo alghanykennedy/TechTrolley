@@ -4,14 +4,14 @@ class TSectionHeading extends StatelessWidget {
   const TSectionHeading({
     super.key,
     this.textColor,
-    this.shwowActionButton = true,
+    this.showActionButton = true,
     required this.title,
     this.buttonTitle = 'View All',
     this.onPressed,
   });
 
   final Color? textColor;
-  final bool shwowActionButton;
+  final bool showActionButton;
   final String title, buttonTitle;
   final void Function()? onPressed;
 
@@ -29,7 +29,7 @@ class TSectionHeading extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
-        if (shwowActionButton)
+        if (showActionButton)
           TextButton(
             onPressed: onPressed,
             child: Text(
