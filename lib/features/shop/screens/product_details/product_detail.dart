@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
+import 'package:get/get.dart';
 import 'package:readmore/readmore.dart';
 import 'package:techtrolley/common/widgets/texts/section_heading.dart';
 import 'package:techtrolley/features/shop/screens/product_details/widgets/bottom_add_to_cart_widget.dart';
@@ -7,6 +7,7 @@ import 'package:techtrolley/features/shop/screens/product_details/widgets/produc
 import 'package:techtrolley/features/shop/screens/product_details/widgets/product_detail_img_slider.dart';
 import 'package:techtrolley/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:techtrolley/features/shop/screens/product_details/widgets/rating_share_widget.dart';
+import 'package:techtrolley/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:techtrolley/utils/constants/sizes.dart';
 
 class ProductDetailScreen extends StatelessWidget {
@@ -81,17 +82,21 @@ class ProductDetailScreen extends StatelessWidget {
                     height: TSizes.spaceBtwSections,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const TSectionHeading(
                         title: 'Reviews(199)',
                         showActionButton: false,
                       ),
                       IconButton(
-                          onPressed: () {},
-                          icon: const Icon(
-                            Iconsax.arrow_right3,
-                            size: 18,
-                          ))
+                        onPressed: () => Get.to(
+                          () => const ProductReviewsScreen(),
+                        ),
+                        icon: const Icon(
+                          Icons.arrow_forward_ios,
+                          size: 18,
+                        ),
+                      ),
                     ],
                   ),
                   const SizedBox(
