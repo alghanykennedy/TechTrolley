@@ -11,10 +11,12 @@ class SuccessScreen extends StatelessWidget {
     required this.title,
     required this.subTitle,
     required this.onPressed,
+    required this.isEmail,
   });
 
   final String image, title, subTitle;
   final VoidCallback onPressed;
+  final bool isEmail;
 
   @override
   Widget build(BuildContext context) {
@@ -66,15 +68,17 @@ class SuccessScreen extends StatelessWidget {
               const SizedBox(
                 height: TSizes.spaceBtwItems,
               ),
-              SizedBox(
-                width: double.infinity,
-                child: TextButton(
-                  onPressed: onPressed,
-                  child: const Text(
-                    TTexts.resendEmail,
-                  ),
-                ),
-              ),
+              isEmail == false
+                  ? const SizedBox()
+                  : SizedBox(
+                      width: double.infinity,
+                      child: TextButton(
+                        onPressed: onPressed,
+                        child: const Text(
+                          TTexts.resendEmail,
+                        ),
+                      ),
+                    ),
             ],
           ),
         ),
