@@ -7,6 +7,7 @@ import 'package:techtrolley/common/widgets/list_tile/setting_menu_tile.dart';
 import 'package:techtrolley/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:techtrolley/common/widgets/texts/section_heading.dart';
 import 'package:techtrolley/features/personalization/screens/address/address.dart';
+import 'package:techtrolley/features/shop/screens/order/order.dart';
 import 'package:techtrolley/utils/constants/colors.dart';
 import 'package:techtrolley/utils/constants/sizes.dart';
 
@@ -74,7 +75,7 @@ class SettingScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subtitle: 'In-progress and Completed Orders',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const OrderScreen()),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.bank,
