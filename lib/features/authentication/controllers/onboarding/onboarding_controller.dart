@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:techtrolley/features/authentication/screens/login/login.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +23,17 @@ class OnBoardingController extends GetxController {
   /// Update Current Index & jump to next page
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      Get.to(() => const LoginScreen());
+      final storage = GetStorage();
+
+      if (kDebugMode) {
+        print(
+            '======================= GET STORAGE NEXT BUTTON =======================');
+        print(storage.read('isFirstTime'));
+      }
+
+      storage.write('isFirstTime', false);
+
+      Get.offAll(() => const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
